@@ -1,4 +1,8 @@
 .App {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; */
   text-align: center;
 }
 
@@ -34,5 +38,64 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.main-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+/* .form-control {
+  width: 50% !important;
+  border-radius: 0px !important;
+  border: 1px solid black !important;
+}
+
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.form-check-input[type="checkbox"] {
+  border-radius: 0px;
+  height: 32px;
+  width: 32px;
+} */
+
+.btn-secondary {
+  width: 50% !important;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card-dummy {
+  column-gap: 12px;
+  display: flex;
+  flex-direction: row;
+  row-gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  #image-col {
+    display: none;
   }
 }
